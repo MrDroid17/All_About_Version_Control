@@ -1,3 +1,6 @@
+												Version Control System
+
+
 Version Control System(VCS) is just software that helps you control (or manage) the different versions...of something (typically source code).
 
 
@@ -17,7 +20,8 @@ There are two main types of version control system models:
 Git is a distributed model.
 
 
-Version Control or Git Terminology:
+											
+											Version Control or Git Terminology
 
 * Version Control System / Source Code Manager:
 
