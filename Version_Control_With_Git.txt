@@ -1,6 +1,5 @@
 Version Control System
 
-
 Version Control System(VCS) is just software that helps you control (or manage) the different 
 versions...of something (typically source code).
 
@@ -68,7 +67,7 @@ Staging Index are poised to be added to the repository.
 
 A SHA is basically an ID number for each commit. Here's what a commit's SHA might look like: e2adf8ae3e2e4ed40add75cc44cf9d0a869afeb6.
 
-It is a 40-character string composed of characters (0â€“9 and aâ€“f) and calculated based on the 
+It is a 40-character string composed of characters (0–9 and a–f) and calculated based on the 
 contents of a file or directory structure in Git. "SHA" is shorthand for "Secure Hash Algorithm
 
 * Branch
