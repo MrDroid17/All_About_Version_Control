@@ -19,7 +19,7 @@ Gitlab:
 https://gitlab.com/MrDroid/All_About_Version_Control.git
 
 Bitbucket:
-https://kumar1091@bitbucket.org/kumar1091/all_about_version_control.git
+https://bitbucket.org/kumar1091/all_about_version_control.git
 
 https://bitbucket.org/kumar1091/all_about_version_control/src
 
