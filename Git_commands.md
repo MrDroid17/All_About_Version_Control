@@ -6,7 +6,8 @@ Some useful Git Commands
 	Running this command creates a hidden .git directory.
 
 		* This .git directory is the brain/storage center for the repository.
-		* It holds all of the configuration files and directories and is where all of the commits are stored.
+		* It holds all of the configuration files and directories and is where all of the commits 
+		  are stored.
 
 
 *  $ git clone <path-to-repository-to-clone>
@@ -26,7 +27,8 @@ Some useful Git Commands
 	The git status command will display the current status of the repository.
 
 	This command will tell us about:
-	    * new files that have been created in the Working Directory that Git hasn't started tracking, yet
+	    * new files that have been created in the Working Directory that Git hasn't started 
+	      tracking, yet
 	    * files that Git is tracking that have been
 
 
@@ -55,24 +57,28 @@ Some useful Git Commands
 	This command:
 	    * displays the file(s) that have been modified
 	    * displays the number of lines that have been added/removed
-	    * displays a summary line with the total number of modified files and lines that have been added/removed
+	    * displays a summary line with the total number of modified files and lines that 
+	      have been added/removed
 
   $ git log -p
 
-    the -p flag (which is the same as the --patch flag) is also used to alter how git log displays information
+    the -p flag (which is the same as the --patch flag) is also used to alter how git log 
+    displays information
 
 	This command adds the following to the default output:
 	    * displays the files that have been modified
 	    * displays the location of the lines that have been added/removed
 	    * displays the actual changes that have been made
 
-  # you can supply the SHA of a commit as the final argument for all of these commands? For example:
-	$ git log -p fdf5493
+	  you can supply the SHA of a commit as the final argument for all of these commands? 
+	  For example: $ git log -p fdf5493
 
 
 *  $ git show
 
-	The git show command will show only one commit. So don't get alarmed when you can't find any other commits - it only shows one. The output of the git show command is exactly the same as the git log -p command.
+	The git show command will show only one commit. So don't get alarmed when you can't find any other 
+	commits - it only shows one. The output of the git show command is exactly the same as the 
+	git log -p command.
 
 	 So by default, git show displays:
 	    * the commit
@@ -83,52 +89,44 @@ Some useful Git Commands
 
 	However, git show can be combined with most of the other flags we've looked at:
 
-	    * --stat - to show the how many files were changed and the number of lines that were added/removed
-	    * -p or --patch - this the default, but if --stat is used, the patch won't display, so pass -p to add it again
+	    * --stat - to show the how many files were changed and the number of lines that 
+	      were added/removed
+	    * -p or --patch - this the default, but if --stat is used, the patch won't display, so 
+	      pass -p to add it again
 	    * -w - to ignore changes to whitespace
 
 
 
+*  $ git add <file1> <file2> … <fileN>
 
-Git Add Recap
+	The git add command is used to move files from the Working Directory to the Staging Index.
 
-The git add command is used to move files from the Working Directory to the Staging Index.
-
-$ git add <file1> <file2> … <fileN>
-
-This command:
-
-    takes a space-separated list of file names
-    alternatively, the period . can be used in place of a list of files to tell Git to add the current directory (and all nested files)
+	This command:
+	    * takes a space-separated list of file names
+	    * alternatively, the period . can be used in place of a list of files to tell Git to add 
+	    the current directory (and all nested files)
 
 
-Git Commit Recap
+*  $ git commit
 
-The git commit command takes files from the Staging Index and saves them in the repository.
+	The git commit command takes files from the Staging Index and saves them in the repository.
 
-$ git commit
+	This command:
+		* will open the code editor that is specified in your configuration
 
-This command:
+	Inside the code editor:
 
-    will open the code editor that is specified in your configuration
-        (check out the Git configuration step from the first lesson to configure your editor)
-
-Inside the code editor:
-
-    a commit message must be supplied
-    lines that start with a # are comments and will not be recorded
-    save the file after adding a commit message
-    close the editor to make the commit
+	    * a commit message must be supplied
+	    * lines that start with a # are comments and will not be recorded
+	    * save the file after adding a commit message
+	    * close the editor to make the commit
 
 
-Git Diff Recap
+*  $ git diff
 
-To recap, the git diff command is used to see changes that have been made but haven't been committed, yet:
+	the git diff command is used to see changes that have been made but haven't been committed, yet.
 
-$ git diff
-
-This command displays:
-
-    the files that have been modified
-    the location of the lines that have been added/removed
-    the actual changes that have been made
+	This command displays:
+    	* the files that have been modified
+    	* the location of the lines that have been added/removed
+    	* the actual changes that have been made

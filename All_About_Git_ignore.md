@@ -23,9 +23,7 @@ what is Globbing?
     *   ? - matches 1 character
     *   [abc] - matches a, b, or c
     *   ** - matches nested directories - a/**/z matches
-        a/z
-        a/b/z
-        a/b/c/z
+        
 
 
         To see .gitignore and globbing in action checkout this link: 
@@ -37,10 +35,11 @@ Let's try it with the "IgnoreMe.docx" file. Add the following line inside the .g
 project.docx
 
 
-Let's say that you add 50 images to your project, but want Git to ignore all of them. Does this mean you have to list each and every filename in the .gitignore file? Oh gosh no, that would be crazy! Instead, you can use a concept called globbing.
+Let's say that you add 50 images to your project, but want Git to ignore all of them. Does this mean
+ you have to list each and every filename in the .gitignore file? Oh gosh no, that would be crazy! 
+ Instead, you can use a concept called globbing.
 
-
-
-So if all of the 50 images are JPEG images in the "samples" folder, we could add the following line to .gitignore to have Git ignore all 50 images.
+So if all of the 50 images are JPEG images in the "samples" folder, we could add the following line 
+to .gitignore to have Git ignore all 50 images.
 
 samples/*.jpg
