@@ -89,36 +89,46 @@ Some useful Git Commands
 
 
 
-*  $ git add <file1> <file2> … <fileN>
 
-	The git add command is used to move files from the Working Directory to the Staging Index.
+Git Add Recap
 
-	This command:
-	    * takes a space-separated list of file names
-	    * alternatively, the period . can be used in place of a list of files to tell Git to add the current 
-	    directory (and all nested files)
+The git add command is used to move files from the Working Directory to the Staging Index.
 
+$ git add <file1> <file2> … <fileN>
 
-*  $ git commit
+This command:
 
-	The git commit command takes files from the Staging Index and saves them in the repository.
-
-	This command:
-		* will open the code editor that is specified in your configuration
-
-	Inside the code editor:
-
-	    * a commit message must be supplied
-	    * lines that start with a # are comments and will not be recorded
-	    * save the file after adding a commit message
-	    * close the editor to make the commit
+    takes a space-separated list of file names
+    alternatively, the period . can be used in place of a list of files to tell Git to add the current directory (and all nested files)
 
 
-*  $ git diff
+Git Commit Recap
 
-	To recap, the git diff command is used to see changes that have been made but haven't been committed, yet:
+The git commit command takes files from the Staging Index and saves them in the repository.
 
-	This command displays:
-    	* the files that have been modified
-    	* the location of the lines that have been added/removed
-    	* the actual changes that have been made
+$ git commit
+
+This command:
+
+    will open the code editor that is specified in your configuration
+        (check out the Git configuration step from the first lesson to configure your editor)
+
+Inside the code editor:
+
+    a commit message must be supplied
+    lines that start with a # are comments and will not be recorded
+    save the file after adding a commit message
+    close the editor to make the commit
+
+
+Git Diff Recap
+
+To recap, the git diff command is used to see changes that have been made but haven't been committed, yet:
+
+$ git diff
+
+This command displays:
+
+    the files that have been modified
+    the location of the lines that have been added/removed
+    the actual changes that have been made
