@@ -1,0 +1,92 @@
+Some useful Git Commands
+
+
+*  $ git init
+
+	Running this command creates a hidden .git directory.
+
+		* This .git directory is the brain/storage center for the repository.
+		* It holds all of the configuration files and directories and is where all of the commits are stored.
+
+
+*  $ git clone <path-to-repository-to-clone>
+   $ git clone <path-to-repository-to-clone>  <new directory-name>
+
+	The git clone command is used to create an identical copy of an existing repository.
+
+	This command:
+	    * takes the path to an existing repository
+	    * by default will create a directory with the same name as the repository that's being cloned
+	    * can be given a second argument that will be used as the name of the directory
+	    * will create the new repository inside of the current working directory
+
+
+*  $ git status
+
+	The git status command will display the current status of the repository.
+
+	This command will tell us about:
+	    * new files that have been created in the Working Directory that Git hasn't started tracking, yet
+	    * files that Git is tracking that have been
+
+
+*  $ git log
+
+	By default, this command displays:
+
+	    * the SHA
+	    * the author
+	    * the date
+	    * and the message
+
+  $ git log --oneline
+
+  	the --oneline flag is used to alter how git log displays information
+
+	This command:
+	    * lists one commit per line
+	    * shows the first 7 characters of the commit's SHA
+	    * shows the commit's message
+
+  $ git log --stat
+
+    the --stat flag is also used to alter how git log displays information.
+
+	This command:
+	    * displays the file(s) that have been modified
+	    * displays the number of lines that have been added/removed
+	    * displays a summary line with the total number of modified files and lines that have been added/removed
+
+  $ git log -p
+
+    the -p flag (which is the same as the --patch flag) is also used to alter how git log displays information
+
+	This command adds the following to the default output:
+	    * displays the files that have been modified
+	    * displays the location of the lines that have been added/removed
+	    * displays the actual changes that have been made
+
+  # you can supply the SHA of a commit as the final argument for all of these commands? For example:
+	$ git log -p fdf5493
+
+
+*  $ git show
+
+	The git show command will show only one commit. So don't get alarmed when you can't find any other commits - it only shows one. The output of the git show command is exactly the same as the git log -p command.
+
+	 So by default, git show displays:
+	    * the commit
+	    * the author
+	    * the date
+	    * the commit message
+	    * the patch information
+
+	However, git show can be combined with most of the other flags we've looked at:
+
+	    * --stat - to show the how many files were changed and the number of lines that were added/removed
+	    * -p or --patch - this the default, but if --stat is used, the patch won't display, so pass -p to add it again
+	    * -w - to ignore changes to whitespace
+
+
+
+
