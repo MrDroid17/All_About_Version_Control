@@ -13,11 +13,11 @@
 
 ### Links:
 
-Github:
-https://github.com/MrDroid17/All_About_Version_Control.git
+GitHub:
+[Click here](https://github.com/MrDroid17/All_About_Version_Control.git)
 
-Gitlab:
-https://gitlab.com/MrDroid/All_About_Version_Control.git
+GitLab:
+[Click here](https://gitlab.com/MrDroid/All_About_Version_Control.git)
 
-Bitbucket:
-https://bitbucket.org/kumar1091/all_about_version_control.git
+BitBucket:
+[Click here](https://bitbucket.org/kumar1091/all_about_version_control.git)
