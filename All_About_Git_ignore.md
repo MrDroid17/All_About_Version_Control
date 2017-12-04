@@ -1,4 +1,4 @@
-What is .gitignore file and why do we needit?
+#### What is .gitignore file and why do we needit?
 
 	If you want to keep a file in your project's directory structure but make sure it isn't accidentally 
 	committed to the project, you can use the specially named file, .gitignore. Add this file to your 
@@ -6,7 +6,7 @@ What is .gitignore file and why do we needit?
 	once you have created .gitignore file ,list the names of files that you want Git to ignore (not track) 
 	and it will ignore them.
 
-what is Globbing?
+#### what is Globbing?
 
 	Globbing is the process of expanding a non-specific file name containing a wildcard character into 
 	a set of specific file names that exist in storage on a computer, server, or network. A wildcard is
@@ -24,6 +24,7 @@ what is Globbing?
     *	** - matches nested directories - a/**/z matches
       
 
-        ### To see .gitignore and globbing in action checkout this link: 
+  ### To see .gitignore and globbing in action checkout this link:
+  <https://www.youtube.com/watch?v=EJcc-TiMNhE>
 
-        https://www.youtube.com/watch?v=EJcc-TiMNhE
+        
