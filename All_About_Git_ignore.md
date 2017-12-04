@@ -25,6 +25,7 @@ can use the following:
  ```     
 
   ### To see .gitignore and globbing in action checkout this link:
-  <https://www.youtube.com/watch?v=EJcc-TiMNhE>
+  [Click here](https://www.youtube.com/watch?v=T14qeA6uRDs)
+  
 
         
