@@ -1,6 +1,6 @@
 #### This repository has all the info regarding Version Control System(VCS), Their Types, VCS models, Git and Github.
 
-##Topics:
+## Topics:
 
 * what is Version control(VC)?
 * different types
@@ -10,7 +10,7 @@
 * Github
 
 
-####links:
+###links:
 
 Github:
 https://github.com/MrDroid17/All_About_Version_Control.git
