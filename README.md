@@ -1,4 +1,4 @@
-This repository has all the info regarding version control system(VCS) their Types, VCS models, git and github.
+#### This repository has all the info regarding Version Control System(VCS), Their Types, VCS models, Git and Github.
 
 topics:
 
