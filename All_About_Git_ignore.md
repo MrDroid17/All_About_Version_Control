@@ -17,15 +17,15 @@ Globbing lets you use special characters to match patterns/characters. In the .g
 can use the following:
 
    *	blank lines can be used for spacing
-   *	/# - marks line as a comment
-   *	/* - matches 0 or more characters
+   *	# - marks line as a comment
+   *	* - matches 0 or more characters
    *	? - matches 1 character
    *	[abc] - matches a, b, or c
    *	** - matches nested directories - a/**/z matches
 ```     
 
-  ### To see .gitignore and globbing in action checkout this link:
-  [Click here](https://www.youtube.com/watch?v=T14qeA6uRDs)
+### To see .gitignore and globbing in action checkout this link:
+[Click here](https://www.youtube.com/watch?v=T14qeA6uRDs)
   
 
         
