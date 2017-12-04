@@ -24,6 +24,6 @@ what is Globbing?
     *	** - matches nested directories - a/**/z matches
       
 
-        To see .gitignore and globbing in action checkout this link: 
+        ### To see .gitignore and globbing in action checkout this link: 
 
         https://www.youtube.com/watch?v=EJcc-TiMNhE
