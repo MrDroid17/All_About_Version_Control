@@ -130,3 +130,78 @@ Some useful Git Commands
     	* the files that have been modified
     	* the location of the lines that have been added/removed
     	* the actual changes that have been made
+
+
+*  $ git tag -a beta
+
+	the git tag command is used to add a marker on a specific commit. The tag does not move around as
+	new commits are added.
+
+	This command will:
+	    * add a tag to the most recent commit
+	    * add a tag to a specific commit if a SHA is passed
+
+
+*  $ git branch                     		//to list all branches 
+   $ git branch footer-fix          		//to create a new "footer-fix" branch
+   $ git branch -d footer-fix				//to delete the "footer-fix" branch
+
+	This command is used to:
+
+	    * list out local branches
+	    * create new branches
+	    * remove branches
+
+
+*  $ git merge <other-branch>              			// fast-forward merge
+   $ git merge <other-branch> <master-branch>		// regular merge
+
+	There are two types of Merges:
+
+	    * Fast-forward merge:
+
+		    * The branch being merged in must be ahead of the checked out branch. The checked out branch's 
+		      pointer will just be moved forward to point to the same commit as the other branch.
+	    
+	    * The Regular type of merge:
+
+	        * two divergent branches are combined
+	        * a merge commit is created
+
+	Resolving A Merge Conflict
+
+		Git is using the merge conflict indicators to show you what lines caused the merge conflict on 
+		the two different branches as well as what the original line used to have. So to resolve a merge  
+		conflict, you need to:
+
+		    * choose which line(s) to keep
+		    * remove all lines with indicators
+
+
+*  $ git commit --amend 						//  to Alter the most recent commit
+
+		If your Working Directory is clean (meaning there aren't any uncommitted changes in the 
+		repository), then running git commit --amend will let you provide a new commit message. 
+		Your code editor will open up and display the original commit message. Just fix a  
+		misspelling or completely reword it! Then save it and close the editor to lock in the 
+		new commit message.
+
+
+*  $ git revert <SHA-of-commit-to-revert>
+
+	the git revert command is used to reverse a previously made commit:
+
+	This command:
+	    * will undo the changes that were made by the provided commit
+	    * creates a new commit to record the change
+
+
+*  $ git reset <reference-to-commit>
+
+	the git reset command is used erase commits.
+	It can be used to:
+
+	    * move the HEAD and current branch pointer to the referenced commit
+	    * erase commits with the --hard flag
+	    * moves committed changes to the staging index with the --soft flag
+	    * unstages committed changes --mixed flag
